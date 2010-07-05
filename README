@@ -12,3 +12,9 @@ Installation instructions:
 
 Download the .xpi file and install in Thunderbird 3.0.1+ from the Add-ons menu
 option.
+
+License
+
+All code is covered by the Apache version 2.0 license.
+
+http://www.apache.org/licenses/LICENSE-2.0.html
