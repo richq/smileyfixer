@@ -1,0 +1,2 @@
+content   smileyfixer                 chrome/content/
+overlay chrome://messenger/content/messenger.xul chrome://smileyfixer/content/messenger-overlay.xul

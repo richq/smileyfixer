@@ -1,0 +1,14 @@
+Outlook sends emails with a J instead of the smiley :)
+
+The reason is due to the Wingdings font face, which is missing on non-Windows
+platforms. This add-on fixes the most common situations.
+
+More details:
+
+http://lifehacker.com/5574668
+http://superuser.com/questions/159334
+
+Installation instructions:
+
+Download the .xpi file and install in Thunderbird 3.0.1+ from the Add-ons menu
+option.
