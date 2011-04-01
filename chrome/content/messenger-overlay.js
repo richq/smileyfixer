@@ -40,18 +40,17 @@ var smileyfixerOverlay = {
         var unsmiley = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("unsmiley")));
         var smiley = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("smiley")));
         var arrow = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("arrow")));
+        var larrow = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("larrow")));
         var longarrow = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("longarrow")));
         var blob = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("blob")));
-        /*var promptService = Components.classes[
-            "@mozilla.org/embedcomp/prompt-service;1"].getService(
-                Components.interfaces.nsIPromptService);*/
         var mp = document.getElementById('messagepane');
         var spans = mp.contentDocument.getElementsByTagName("span");
         var wdmapping = {
             'J': smiley,
             'L': unsmiley,
             'à': longarrow,
-            'è': arrow
+            'è': arrow,
+            'ß': larrow
         };
         var symbolmapping = {"·": blob};
         for (var i = 0; i < spans.length; i++) {
