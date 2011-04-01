@@ -2,6 +2,14 @@ var SMILEY_FIX_PREFS = Components.classes["@mozilla.org/preferences-service;1"].
             getService(Components.interfaces.nsIPrefService).
             getBranch("extensions.smileyfixer.");
 
+function appendErro(str){
+    throw new Error("DEBUG: "+str)
+}
+
+function debug(str){
+    setTimeout("appendErro('"+str+"')", 1)
+}
+
 var smileyfixerOverlay = {
     fixSpan: function(span, mappings) {
         var origSpan = span;
@@ -17,7 +25,10 @@ var smileyfixerOverlay = {
             return;
         }
         span.firstChild.data = result;
-        origSp.style.fontFamily = "";
+        origSpan.style.fontFamily = "";
+        /* show in red if debugging */
+        if (SMILEY_FIX_PREFS.getBoolPref("debug"))
+            origSpan.style.backgroundColor = "#ff0000";
     },
     onLoadMessagePane: function(event) {
         /* Only process when there is a message present */
