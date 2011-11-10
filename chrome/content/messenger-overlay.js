@@ -36,6 +36,8 @@ var smileyfixerOverlay = {
             return;
         if (!gMessageDisplay.displayedMessage)
             return;
+        if (!SMILEY_FIX_PREFS.getBoolPref("enabled"))
+            return;
         document.removeEventListener("load", smileyfixerOverlay.onLoadMessagePane, true);
         var unsmiley = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("unsmiley")));
         var smiley = decodeURIComponent(escape(SMILEY_FIX_PREFS.getCharPref("smiley")));

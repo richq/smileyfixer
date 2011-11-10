@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<prefwindow
+	title="Smiley Fixer Preferences"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane label="Smiley Fixer Preferences">
+		<preferences>
+			<preference id="smiley-fixer-debug-enabled" name="extensions.smileyfixer.debug" type="bool"/>
+			<preference id="smiley-fixer-enabled" name="extensions.smileyfixer.enabled" type="bool"/>
+			<preference id="smiley-fixer-smiley" name="extensions.smileyfixer.smiley" type="string"/>
+			<preference id="smiley-fixer-unsmiley" name="extensions.smileyfixer.unsmiley" type="string"/>
+			<preference id="smiley-fixer-arrow" name="extensions.smileyfixer.arrow" type="string"/>
+			<preference id="smiley-fixer-larrow" name="extensions.smileyfixer.larrow" type="string"/>
+			<preference id="smiley-fixer-longarrow" name="extensions.smileyfixer.longarrow" type="string"/>
+			<preference id="smiley-fixer-blob" name="extensions.smileyfixer.blob" type="string"/>
+		</preferences>
+
+		<groupbox>
+			<caption label="Settings"/>
+			<vbox id="boxMain" flex="1">
+				<hbox>
+					<vbox>
+						<label flex="1" value="Smiley Text" class="pref-label"/>
+						<label flex="1" value="Frowny Text" class="pref-label"/>
+						<label flex="1" value="Arrow Text" class="pref-label"/>
+						<label flex="1" value="Left Arrow Text" class="pref-label"/>
+						<label flex="1" value="Long Arrow Text" class="pref-label"/>
+						<label flex="1" value="List Bullet Text" class="pref-label"/>
+					</vbox>
+					<vbox>
+						<textbox flex="1" id="unsmiley" preference="smiley-fixer-unsmiley"/>
+						<textbox flex="1" id="smiley" preference="smiley-fixer-smiley"/>
+						<textbox flex="1" id="arrow" preference="smiley-fixer-arrow"/>
+						<textbox flex="1" id="larrow" preference="smiley-fixer-larrow"/>
+						<textbox flex="1" id="longarrow" preference="smiley-fixer-longarrow"/>
+						<textbox flex="1" id="blob" preference="smiley-fixer-blob"/>
+					</vbox>
+				</hbox>
+
+				<hbox>
+					<checkbox id="enabled" preference="smiley-fixer-enabled" label="Fixings enabled"/>
+				</hbox>
+				<hbox>
+					<checkbox id="debug" preference="smiley-fixer-debug-enabled"
+						label="Debug (altered text has a red background)" />
+				</hbox>
+			</vbox>
+		</groupbox>
+	</prefpane>
+</prefwindow>
