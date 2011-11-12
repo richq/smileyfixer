@@ -8,7 +8,6 @@
     <em:creator>Richard Quirk</em:creator>
     <em:contributor></em:contributor>
     <em:description>Fixes Wingding Smileys in Outlook-generated emails</em:description>
-    <em:aboutURL>chrome://smileyfixer/content/about.xul</em:aboutURL>
     <em:homepageURL>http://github.com/richq/smileyfixer</em:homepageURL>
     <em:iconURL>chrome://smileyfixer/content/smileyfixer.png</em:iconURL>
     <em:optionsURL>chrome://smileyfixer/content/options.xul</em:optionsURL>
