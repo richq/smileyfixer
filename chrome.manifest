@@ -1,3 +1,4 @@
 content   smileyfixer                 chrome/content/
 locale    smileyfixer   en-US         locale/en-US/
+locale    smileyfixer   es-ES         locale/es-ES/
 overlay chrome://messenger/content/messenger.xul chrome://smileyfixer/content/messenger-overlay.xul

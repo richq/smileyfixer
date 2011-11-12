@@ -7,7 +7,8 @@ dist_EXTRA :=   ./install.rdf \
 		./chrome/content/smileyfixer.png \
 		./chrome/content/messenger-overlay.xul \
 		./chrome/content/messenger-overlay.js \
-		./locale/en-US/options.dtd
+		./locale/en-US/options.dtd \
+		./locale/es-ES/options.dtd
 
 .PHONY: all clean dist
 

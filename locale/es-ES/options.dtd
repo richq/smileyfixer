@@ -1,0 +1,10 @@
+<!ENTITY smileyFixerPreferences "Preferencias de Smiley Text">
+<!ENTITY settings "Preferencias">
+<!ENTITY smileyText "Sonrisita">
+<!ENTITY frownyText "Enfadado">
+<!ENTITY arrowText "Flecha">
+<!ENTITY lArrowText "Flecha hacia a la izquierda">
+<!ENTITY longArrowText "Flecha larga">
+<!ENTITY blobText "Punto en lista de viñetas">
+<!ENTITY fixingsEnabled "Arreglos activados">
+<!ENTITY debugEnabled "Modo debug (texto modificado tiene el fondo en rojo)">
