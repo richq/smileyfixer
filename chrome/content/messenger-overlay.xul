@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <overlay id="smileyfixeroverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
     <script type="application/javascript"
-        src="chrome://smileyfixer/content/messenger-overlay-min.js"/>
+        src="chrome://smileyfixer/content/messenger-overlay.js"/>
 </overlay>
