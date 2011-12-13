@@ -84,6 +84,8 @@ if (typeof SmileyFixer == "undefined") {
             return;
 
         var currentEditor = GetCurrentEditor();
+        if (currentEditor === null)
+            return;
         var currentEditorDom = currentEditor.rootElement;
         SmileyFixer.doFixups(currentEditorDom);
     };
