@@ -6,7 +6,7 @@ if (typeof SmileyFixer == "undefined") {
                          getService(Components.interfaces.nsIPrefService).
                              getBranch("extensions.smileyfixer."));
 
-    SmileyFixer.fixSpan = function(span, mappings) {
+    SmileyFixer.fixSpan = function(span, mapping) {
         var origSpan = span;
         if (span.firstChild.tagName === "SPAN") {
             /* crazy list thing */
@@ -14,8 +14,8 @@ if (typeof SmileyFixer == "undefined") {
         }
         var compareTo = span.firstChild.data;
         var result = compareTo;
-        if (mappings[compareTo]) {
-            result = mappings[compareTo];
+        if (mapping[compareTo]) {
+            result = mapping[compareTo];
         } else {
             return;
         }
@@ -24,6 +24,11 @@ if (typeof SmileyFixer == "undefined") {
         /* show in red if debugging */
         if (SmileyFixer.prefs.getBoolPref("debug"))
             origSpan.style.backgroundColor = "#ff0000";
+    };
+
+    SmileyFixer.getUnicodePref = function(prefName) {
+        return SmileyFixer.prefs.getComplexValue(prefName,
+            Components.interfaces.nsISupportsString).data;
     };
 
     SmileyFixer.onLoadMessagePane = function(event) {
@@ -35,29 +40,26 @@ if (typeof SmileyFixer == "undefined") {
         if (!SmileyFixer.prefs.getBoolPref("enabled"))
             return;
         document.removeEventListener("load", SmileyFixer.onLoadMessagePane, true);
-        var unsmiley = decodeURIComponent(escape(SmileyFixer.prefs.getCharPref("unsmiley")));
-        var smiley = decodeURIComponent(escape(SmileyFixer.prefs.getCharPref("smiley")));
-        var arrow = decodeURIComponent(escape(SmileyFixer.prefs.getCharPref("arrow")));
-        var larrow = decodeURIComponent(escape(SmileyFixer.prefs.getCharPref("larrow")));
-        var longarrow = decodeURIComponent(escape(SmileyFixer.prefs.getCharPref("longarrow")));
-        var blob = decodeURIComponent(escape(SmileyFixer.prefs.getCharPref("blob")));
+        var mapping = {
+            'J': 'smiley',
+            'L': 'unsmiley',
+            'à': 'longarrow',
+            'è': 'arrow',
+            'ß': 'larrow',
+            "·": 'blob'
+        };
+        for (var key in mapping) {
+            mapping[key] = SmileyFixer.getUnicodePref(mapping[key]);
+        }
+
         var mp = document.getElementById('messagepane');
         var spans = mp.contentDocument.getElementsByTagName("span");
-        var wdmapping = {
-            'J': smiley,
-            'L': unsmiley,
-            'à': longarrow,
-            'è': arrow,
-            'ß': larrow
-        };
-        var symbolmapping = {"·": blob};
         for (var i = 0; i < spans.length; i++) {
             try {
                 var span = spans[i];
-                if (span.style.fontFamily === "Wingdings") {
-                    SmileyFixer.fixSpan(span, wdmapping);
-                } else if (span.style.fontFamily === "Symbol") {
-                    SmileyFixer.fixSpan(span, symbolmapping);
+                if (span.style.fontFamily === "Wingdings" ||
+                    span.style.fontFamily === "Symbol") {
+                    SmileyFixer.fixSpan(span, mapping);
                 }
             }
             catch (e) {
