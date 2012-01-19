@@ -2,7 +2,7 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <!DOCTYPE prefwindow SYSTEM "chrome://smileyfixer/locale/options.dtd">
 
-<prefwindow title="&smileyFixerPreferences;"
+<prefwindow id="smileyFixerPreferences" title="&smileyFixerPreferences;"
 	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 	<prefpane label="&smileyFixerPreferences;">
