@@ -53,7 +53,8 @@ if (typeof SmileyFixer == "undefined") {
             'à': 'longarrow',
             'è': 'arrow',
             'ß': 'larrow',
-            "·": 'blob'
+            "·": 'blob',
+            "n": 'square'
         };
         for (var key in mapping) {
             mapping[key] = SmileyFixer.getUnicodePref(mapping[key]);

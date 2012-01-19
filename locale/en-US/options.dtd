@@ -6,5 +6,6 @@
 <!ENTITY lArrowText "Left Arrow">
 <!ENTITY longArrowText "Long Arrow">
 <!ENTITY blobText "List Bullet">
+<!ENTITY squareText "Square Bullet">
 <!ENTITY fixingsEnabled "Fixings Enabled">
 <!ENTITY debugEnabled "Debug mode (altered text has a red background)">
