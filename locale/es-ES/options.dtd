@@ -1,11 +1,15 @@
 <!ENTITY smileyFixerPreferences "Preferencias de Smiley Text">
 <!ENTITY settings "Preferencias">
 <!ENTITY smileyText "Sonrisita">
+<!ENTITY neutralText "Neutral">
 <!ENTITY frownyText "Enfadado">
 <!ENTITY arrowText "Flecha">
 <!ENTITY lArrowText "Flecha hacia a la izquierda">
 <!ENTITY longArrowText "Flecha larga">
 <!ENTITY blobText "Punto en lista de viñetas">
 <!ENTITY squareText "Cuadrado en lista de viñetas">
+<!ENTITY toplightarrowText "Flecha con brillo">
+<!ENTITY leftrightText "Flecha izquierda-derecha">
+<!ENTITY skullText "Calavera">
 <!ENTITY fixingsEnabled "Arreglos activados">
 <!ENTITY debugEnabled "Modo debug (texto modificado tiene el fondo en rojo)">

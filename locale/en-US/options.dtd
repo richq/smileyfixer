@@ -1,11 +1,15 @@
 <!ENTITY smileyFixerPreferences "Smiley Fixer Preferences">
 <!ENTITY settings "Settings">
 <!ENTITY smileyText "Smiley">
+<!ENTITY neutralText "Neutral">
 <!ENTITY frownyText "Frowny">
 <!ENTITY arrowText "Arrow">
 <!ENTITY lArrowText "Left Arrow">
 <!ENTITY longArrowText "Long Arrow">
 <!ENTITY blobText "List Bullet">
 <!ENTITY squareText "Square Bullet">
+<!ENTITY toplightarrowText "Top-lit right arrow">
+<!ENTITY leftrightText "Left-right arrow">
+<!ENTITY skullText "Skull">
 <!ENTITY fixingsEnabled "Fixings Enabled">
 <!ENTITY debugEnabled "Debug mode (altered text has a red background)">

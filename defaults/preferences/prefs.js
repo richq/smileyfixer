@@ -1,9 +1,13 @@
 pref("extensions.smileyfixer.smiley", "☺");
 pref("extensions.smileyfixer.unsmiley", "☹");
+pref("extensions.smileyfixer.neutral", ":-|");
+pref("extensions.smileyfixer.skull", "☠");
 pref("extensions.smileyfixer.arrow", "➔");
 pref("extensions.smileyfixer.larrow", "←");
 pref("extensions.smileyfixer.longarrow", "→");
+pref("extensions.smileyfixer.leftright", "⬄");
 pref("extensions.smileyfixer.blob", "•");
 pref("extensions.smileyfixer.square", "■");
+pref("extensions.smileyfixer.toplightarrow", "➢");
 pref("extensions.smileyfixer.debug", false);
 pref("extensions.smileyfixer.enabled", true);

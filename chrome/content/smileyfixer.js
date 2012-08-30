@@ -49,12 +49,16 @@ if (typeof SmileyFixer == "undefined") {
     SmileyFixer.doFixups = function(contentDocument) {
         var mapping = {
             'J': 'smiley',
+            'K': 'neutral',
             'L': 'unsmiley',
+            'N': 'skull',
             'à': 'longarrow',
             'è': 'arrow',
             'ß': 'larrow',
-            "·": 'blob',
-            "n": 'square'
+            '·': 'blob',
+            'n': 'square',
+            'ó': 'leftright',
+            'Ø': 'toplightarrow'
         };
         for (var key in mapping) {
             mapping[key] = SmileyFixer.getUnicodePref(mapping[key]);
