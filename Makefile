@@ -1,4 +1,5 @@
-VERSION := $(shell awk '/em:version/ {gsub("</?em:version>", "",$$1); print $$1}' install.rdf)
+filt := <em:version>%</em:version>
+VERSION := $(patsubst $(filt),%,$(filter $(filt), $(shell cat install.rdf)))
 
 dist_EXTRA :=   ./install.rdf \
 		./chrome.manifest \
@@ -13,7 +14,7 @@ dist_EXTRA :=   ./install.rdf \
 		./locale/en-US/options.dtd \
 		./locale/es-ES/options.dtd
 
-.PHONY: all clean dist
+.PHONY: all
 
 all: smileyfixer-$(VERSION).xpi
 
