@@ -14,10 +14,19 @@ if (typeof SmileyFixer == "undefined") {
             span = span.firstChild;
         }
         var compareTo = span.firstChild.data;
-        var result = compareTo;
-        if (mapping[compareTo]) {
-            result = mapping[compareTo];
-        } else {
+        var result = '';
+        var found = false;
+        for (var i = 0 ; i < compareTo.length; i++) {
+            var txt = compareTo.charAt(i);
+            var replacement = mapping[txt]
+            if (replacement) {
+                result += replacement;
+                found = true;
+            } else {
+                result += txt;
+            }
+        }
+        if (! found) {
             return;
         }
         span.firstChild.data = result;
