@@ -87,6 +87,8 @@ if (typeof SmileyFixer == "undefined") {
         var type = GetCurrentEditorType();
         if (type !== "htmlmail")
             return;
+        if (!SmileyFixer.prefs.getBoolPref("enabled"))
+            return;
 
         var currentEditor = GetCurrentEditor();
         if (currentEditor === null)
