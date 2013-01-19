@@ -8,9 +8,16 @@ More details:
 http://lifehacker.com/5574668
 http://superuser.com/questions/159334
 
-Installation instructions:
+Installation instructions
+----
 
-Download the .xpi file and install in Thunderbird 3.0.1+ from the Add-ons menu
+Clone the repository locally then run `make`
+
+  $ git clone https://github.com/richq/smileyfixer.git
+  $ cd smileyfixer
+  $ make
+
+Install the resulting xpi file in Thunderbird 3+ from the Add-ons menu
 option.
 
 This add-on is also available from the Mozilla Add-ons site.
