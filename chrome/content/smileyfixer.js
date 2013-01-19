@@ -61,6 +61,7 @@ if (typeof SmileyFixer == "undefined") {
             'K': 'neutral',
             'L': 'unsmiley',
             'N': 'skull',
+            'M': 'bomba',
             'à': 'longarrow',
             'è': 'arrow',
             'ß': 'larrow',

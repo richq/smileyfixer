@@ -7,6 +7,7 @@
 <!ENTITY lArrowText "Flecha hacia a la izquierda">
 <!ENTITY longArrowText "Flecha larga">
 <!ENTITY blobText "Punto en lista de viñetas">
+<!ENTITY bombaText "Bomba">
 <!ENTITY squareText "Cuadrado en lista de viñetas">
 <!ENTITY toplightarrowText "Flecha con brillo">
 <!ENTITY leftrightText "Flecha izquierda-derecha">

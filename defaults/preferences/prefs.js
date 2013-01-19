@@ -7,6 +7,7 @@ pref("extensions.smileyfixer.larrow", "←");
 pref("extensions.smileyfixer.longarrow", "→");
 pref("extensions.smileyfixer.leftright", "⬄");
 pref("extensions.smileyfixer.blob", "•");
+pref("extensions.smileyfixer.bomba", "●~*");
 pref("extensions.smileyfixer.square", "■");
 pref("extensions.smileyfixer.toplightarrow", "➢");
 pref("extensions.smileyfixer.debug", false);

@@ -17,6 +17,7 @@
 			<preference id="smiley-fixer-larrow" name="extensions.smileyfixer.larrow" type="string"/>
 			<preference id="smiley-fixer-longarrow" name="extensions.smileyfixer.longarrow" type="string"/>
 			<preference id="smiley-fixer-blob" name="extensions.smileyfixer.blob" type="string"/>
+			<preference id="smiley-fixer-bomba" name="extensions.smileyfixer.bomba" type="string"/>
 			<preference id="smiley-fixer-square" name="extensions.smileyfixer.square" type="string"/>
 			<preference id="smiley-fixer-toplightarrow" name="extensions.smileyfixer.toplightarrow" type="string"/>
 			<preference id="smiley-fixer-leftright" name="extensions.smileyfixer.leftright" type="string"/>
@@ -35,6 +36,7 @@
 						<label flex="1" value="&lArrowText;" class="pref-label"/>
 						<label flex="1" value="&longArrowText;" class="pref-label"/>
 						<label flex="1" value="&blobText;" class="pref-label"/>
+						<label flex="1" value="&bombaText;" class="pref-label"/>
 						<label flex="1" value="&squareText;" class="pref-label"/>
 						<label flex="1" value="&toplightarrowText;" class="pref-label"/>
 						<label flex="1" value="&leftrightText;" class="pref-label"/>
@@ -48,6 +50,7 @@
 						<textbox flex="1" id="larrow" preference="smiley-fixer-larrow"/>
 						<textbox flex="1" id="longarrow" preference="smiley-fixer-longarrow"/>
 						<textbox flex="1" id="blob" preference="smiley-fixer-blob"/>
+						<textbox flex="1" id="bomba" preference="smiley-fixer-bomba"/>
 						<textbox flex="1" id="square" preference="smiley-fixer-square"/>
 						<textbox flex="1" id="toplightarrow" preference="smiley-fixer-toplightarrow"/>
 						<textbox flex="1" id="leftright" preference="smiley-fixer-leftright"/>
