@@ -28,9 +28,9 @@
 			<vbox id="boxMain" flex="1">
 				<hbox>
 					<vbox>
-						<label flex="1" value="&smileyText;" class="pref-label"/>
-						<label flex="1" value="&neutralText;" class="pref-label"/>
 						<label flex="1" value="&frownyText;" class="pref-label"/>
+						<label flex="1" value="&neutralText;" class="pref-label"/>
+						<label flex="1" value="&smileyText;" class="pref-label"/>
 						<label flex="1" value="&skullText;" class="pref-label"/>
 						<label flex="1" value="&arrowText;" class="pref-label"/>
 						<label flex="1" value="&lArrowText;" class="pref-label"/>
