@@ -86,6 +86,19 @@ if (typeof SmileyFixer == "undefined") {
             catch (e) {
             }
         }
+        var fonts = contentDocument.getElementsByTagName("font");
+        for (var i = 0; i < fonts.length; i++) {
+            try {
+                var font = fonts[i];
+                var face = font.getAttribute('face');
+                if (face === "Wingdings" ||
+                    face === "Symbol") {
+                    SmileyFixer.fixSpan(font, mapping);
+                }
+            }
+            catch (e) {
+            }
+        }
     };
 
     SmileyFixer.init = function() {
