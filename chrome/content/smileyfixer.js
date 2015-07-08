@@ -30,7 +30,8 @@ if (typeof SmileyFixer == "undefined") {
             return;
         }
         span.firstChild.data = result;
-        origSpan.style.fontFamily = "";
+        origSpan.style.fontFamily = "inherit";
+        origSpan.style.fontSize = "inherit";
         /* show in red if debugging */
         if (SmileyFixer.prefs.getBoolPref("debug"))
             origSpan.style.backgroundColor = "#ff0000";
