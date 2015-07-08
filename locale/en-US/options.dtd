@@ -11,6 +11,7 @@
 <!ENTITY squareText "Square Bullet">
 <!ENTITY toplightarrowText "Top-lit right arrow">
 <!ENTITY leftrightText "Left-right arrow">
+<!ENTITY treeText "Tree">
 <!ENTITY skullText "Skull">
 <!ENTITY fixingsEnabled "Fixings Enabled">
 <!ENTITY debugEnabled "Debug mode (altered text has a red background)">

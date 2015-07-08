@@ -68,7 +68,8 @@ if (typeof SmileyFixer == "undefined") {
             '·': 'blob',
             'n': 'square',
             'ó': 'leftright',
-            'Ø': 'toplightarrow'
+            'Ø': 'toplightarrow',
+            'P': 'tree'
         };
         for (var key in mapping) {
             mapping[key] = SmileyFixer.getUnicodePref(mapping[key]);
@@ -79,6 +80,7 @@ if (typeof SmileyFixer == "undefined") {
             try {
                 var span = spans[i];
                 if (span.style.fontFamily === "Wingdings" ||
+		    span.style.fontFamily === "Webdings" ||
                     span.style.fontFamily === "Symbol") {
                     SmileyFixer.fixSpan(span, mapping);
                 }
@@ -92,6 +94,7 @@ if (typeof SmileyFixer == "undefined") {
                 var font = fonts[i];
                 var face = font.getAttribute('face');
                 if (face === "Wingdings" ||
+		    face === "Webdings" ||
                     face === "Symbol") {
                     SmileyFixer.fixSpan(font, mapping);
                 }

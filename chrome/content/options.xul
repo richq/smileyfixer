@@ -21,6 +21,7 @@
 			<preference id="smiley-fixer-square" name="extensions.smileyfixer.square" type="string"/>
 			<preference id="smiley-fixer-toplightarrow" name="extensions.smileyfixer.toplightarrow" type="string"/>
 			<preference id="smiley-fixer-leftright" name="extensions.smileyfixer.leftright" type="string"/>
+			<preference id="smiley-fixer-tree" name="extensions.smileyfixer.tree" type="string"/>
 		</preferences>
 
 		<groupbox>
@@ -40,6 +41,7 @@
 						<label flex="1" value="&squareText;" class="pref-label"/>
 						<label flex="1" value="&toplightarrowText;" class="pref-label"/>
 						<label flex="1" value="&leftrightText;" class="pref-label"/>
+						<label flex="1" value="&treeText;" class="pref-label"/>
 					</vbox>
 					<vbox>
 						<textbox flex="1" id="unsmiley" preference="smiley-fixer-unsmiley"/>
@@ -54,6 +56,7 @@
 						<textbox flex="1" id="square" preference="smiley-fixer-square"/>
 						<textbox flex="1" id="toplightarrow" preference="smiley-fixer-toplightarrow"/>
 						<textbox flex="1" id="leftright" preference="smiley-fixer-leftright"/>
+						<textbox flex="1" id="tree" preference="smiley-fixer-tree"/>
 					</vbox>
 				</hbox>
 
