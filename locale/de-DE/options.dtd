@@ -1,0 +1,17 @@
+<!ENTITY smileyFixerPreferences "Smiley Fixer Einstellungen">
+<!ENTITY settings "Einstellungen">
+<!ENTITY smileyText "Glücklich">
+<!ENTITY neutralText "Neutral">
+<!ENTITY frownyText "Traurig">
+<!ENTITY arrowText "Pfeil">
+<!ENTITY lArrowText "Pfeil nach links">
+<!ENTITY longArrowText "Pfeil nach rechts">
+<!ENTITY blobText "Aufzählungszeichen">
+<!ENTITY bombaText "Bombe">
+<!ENTITY squareText "Quadrat">
+<!ENTITY toplightarrowText "Pfeil nach rechts, oben hell">
+<!ENTITY leftrightText "Pfeil nach links und rechts">
+<!ENTITY treeText "Spiegelstrich">
+<!ENTITY skullText "Totenkopf">
+<!ENTITY fixingsEnabled "Fehlerbehebungen aktiviert">
+<!ENTITY debugEnabled "Debug-Modus (veränderter Text wird mit rotem Hintergrund gekennzeichnet)">
