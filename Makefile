@@ -12,6 +12,7 @@ dist_EXTRA :=   ./install.rdf \
 		./chrome/content/compose-overlay.js \
 		./chrome/content/smileyfixer.js \
 		./locale/en-US/options.dtd \
+		./locale/de-DE/options.dtd \
 		./locale/es-ES/options.dtd
 
 .PHONY: all
