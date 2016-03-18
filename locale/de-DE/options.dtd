@@ -11,7 +11,7 @@
 <!ENTITY squareText "Quadrat">
 <!ENTITY toplightarrowText "Pfeil nach rechts, oben hell">
 <!ENTITY leftrightText "Pfeil nach links und rechts">
-<!ENTITY treeText "Spiegelstrich">
+<!ENTITY treeText "Baum">
 <!ENTITY skullText "Totenkopf">
 <!ENTITY fixingsEnabled "Fehlerbehebungen aktiviert">
 <!ENTITY debugEnabled "Debug-Modus (veränderter Text wird mit rotem Hintergrund gekennzeichnet)">
