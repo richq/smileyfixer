@@ -1,5 +1,6 @@
 content   smileyfixer                 chrome/content/
 locale    smileyfixer   en-US         locale/en-US/
 locale    smileyfixer   es-ES         locale/es-ES/
+locale    smileyfixer   de-DE         locale/de-DE/
 overlay chrome://messenger/content/messenger.xul chrome://smileyfixer/content/messenger-overlay.xul
 overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://smileyfixer/content/compose-overlay.xul
