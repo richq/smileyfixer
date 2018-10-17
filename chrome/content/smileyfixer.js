@@ -37,11 +37,6 @@ if (typeof SmileyFixer == "undefined") {
             origSpan.style.backgroundColor = "#ff0000";
     };
 
-    SmileyFixer.getUnicodePref = function(prefName) {
-        return SmileyFixer.prefs.getComplexValue(prefName,
-            Components.interfaces.nsISupportsString).data;
-    };
-
     SmileyFixer.onLoadMessagePane = function(event) {
         /* Only process when there is a message present */
         if (!gMessageDisplay)
@@ -73,7 +68,7 @@ if (typeof SmileyFixer == "undefined") {
             'P': 'tree'
         };
         for (var key in mapping) {
-            mapping[key] = SmileyFixer.getUnicodePref(mapping[key]);
+            mapping[key] = SmileyFixer.prefs.getStringPref(mapping[key]);
         }
 
         var spans = contentDocument.getElementsByTagName("span");
